@@ -1,7 +1,9 @@
 {
+  "buildCommand": "npm install --legacy-peer-deps && npm run build",
+  "outputDirectory": "dist/client",
   "rewrites": [
     {
-      "source": "/((?!_next|assets|favicon.ico).*)",
+      "source": "/((?!assets|favicon.ico).*)",
       "destination": "/api/server"
     }
   ]
